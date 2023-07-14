@@ -1,0 +1,536 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maim-color:black;
+    --main-font: 'Montserrat', sans-serif;
+    --sec-font: 'Poppins', sans-serif;
+}
+section{
+    padding: 50px;
+}
+.container{
+    width: 85% !important;
+} 
+
+/* ----home------ */
+#home{
+    background-image: url(../bg.jpg);
+ width: 100%;
+ height: 100vh;
+background-size: cover;
+background-position: center center;
+
+}
+
+#home .home-layer{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+}
+#home h1{
+font-size: 50px;
+font-weight: 800;
+line-height: 72px;
+font-family: var(--main-font);
+}
+#home h2 p::after{
+    content: '';
+    animation: typing 15s infinite alternate;
+    font-size: 50px;
+    color: white;
+    -webkit-animation: typing 10s infinite alternate;
+    font-size: 60px;
+    font-family: var(--main-font);
+
+}
+   
+@keyframes typing{
+    0%{ content: '|'}
+    2%{ content: 'L|'}
+    4%{ content: 'La|'}
+    6%{ content: 'Lar|'}
+    8%{ content: ' Larr|'}
+    10%{ content: 'Larry|'}
+    12%{ content: 'Larry D|'}
+    14%{ content: 'Larry Da|'}
+    16%{ content: 'Larry Dan|'}
+    18%{ content: 'Larry Dani|'}
+    20%{ content: 'Larry Danie|'}
+    22%{ content: 'Larry Daniel|'}
+    24%{ content: 'Larry Daniels|'}
+    26%{ content: 'Larry Daniel|'}
+    26%{ content: 'Larry Danie|'}
+    28%{ content: 'Larry Dani|'}
+    30%{ content: 'Larry Dan|'}
+    32%{ content: ' Larry Da|'}
+    34%{ content: 'Larry D|'}
+    36%{ content: 'Larry |'}
+    38%{ content: 'Larr|'}
+    40%{ content: 'Lar|'}
+    42%{ content: 'La|'}
+    44%{ content: 'L|'}
+    46%{ content: '|'}
+    48%{ content: '    D|'}
+    50%{ content: '    De|'}
+    51%{ content: '    Dev|'}
+    52%{ content: '    Deve|'}
+    54%{ content: '    Devel|'}
+    56%{ content: '    Develo|'}
+    58%{ content: '    Develop|'}
+    60%{ content: '    Developer|'}
+    61%{ content: '    Develope|'}
+    62%{ content: '    Develop|'}
+    64%{ content: '    Develo|'}
+    66%{ content: '    Develo|'}
+    68%{ content: '    Devel|'}
+    70%{ content: '    Deve|'}
+    72%{ content: '    Dev|'}
+    74%{ content: '    De|'}
+    76%{ content: '    D|'}
+    78%{ content: '    |'}
+    80%{ content: ' D |'}
+    82%{ content: ' De |'}
+    84%{ content: ' Des |'}
+    82%{ content: ' Desi |'}
+    84%{ content: ' Desig|'}
+    86%{ content: ' Design |'}
+    88%{ content: ' Designe |'}
+    90%{ content: ' Designer |'}
+    92%{ content: ' Designe |'}
+    94%{ content: ' Design |'}
+    96%{ content: ' Desig |'}
+    97%{ content: ' Desi |'}
+    98%{ content: ' Des |'}
+    99%{ content: ' De|'}
+    100%{ content: ' D |'}
+     /* Larry Daniels
+        Developer
+        Designer */
+ 
+}
+
+ .home-icon li {
+        margin: 5px;
+        list-style:none;
+        border:1px solid var(--maim-color) ;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: black;
+
+    
+    }
+      .home-icon li a{
+        color: white;
+    }
+ 
+/* --------nav------- */
+.navbar li a{
+    line-height: 30px;
+    margin: 8px 10px;
+   
+}
+
+.navbar-nav  .active::after  {
+    content: '' ;
+    height: 2.5px  ;
+    width: 43px ;
+    position: absolute ;
+    background-color: white ;
+    bottom: 30% ;
+    left:20% ;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+/* ----------About------------ */
+.about-caption h2{
+    color: rgb(51,51,51);
+    font-size: 30px;
+    font-weight: 800;
+    font-family: var(--main-font);
+
+}
+.about-caption .frist-p { 
+Color:#999999;
+font-size: 14px;
+font-family: var(--sec-font);
+
+}
+.about-img::after{
+    content: '';
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    left: -10px;
+    bottom: -30px; 
+    background-image: url(../dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.about-img img{
+    width: 90%;
+}
+
+.about-btn button{
+    margin: 20px 5px;
+    padding: 8px 30px;
+   
+}
+.contactme-button{
+    border-color:  var(--maim-color) !important;
+    background-color: white !important;
+    color:  var(--maim-color) !important;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.download-button{
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+ .contactme-button:hover  {
+    border-color:  var(--maim-color) !important;
+background-color:  var(--maim-color) !important;
+color: white !important;
+}
+.download-button:hover  {
+    border-color:  var(--maim-color) !important;
+background-color: white !important;
+color: black !important;
+}
+
+/* ---------title------- */
+.title{
+    font-size: 40px;
+    color: #343434 !important;
+    font-weight: bolder;
+    position: relative;
+    font-weight: 900;
+    color: #343434;
+    font-family: var(--main-font);
+
+}
+.title::after{
+    content: '';
+    height: 80%;
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    bottom: 0px;
+    background-image: url(../dots.png)!important ;
+    background-repeat: repeat;
+    z-index: -1;
+    -webkit-transform: translatex(-50%);
+    -moz-transform: translatex(-50%);
+    -ms-transform: translatex(-50%);
+    -o-transform: translatex(-50%);
+}
+/* ------------services---------- */
+.services-icons i{
+    color:  var(--maim-color);
+    border: 1px solid transparent;
+    background-color: rgb(235,235,235);
+    transition: all 0.5s ;
+    -webkit-transition: all 0.5s ;
+    -moz-transition: all 0.5s ;
+    -ms-transition: all 0.5s ;
+    -o-transition: all 0.5s ;
+}
+.item:hover .services-icons i    {
+    color: white;
+    border: 1px solid transparent;
+    background-color:  var(--maim-color);
+}
+.nav-tabs .nav-link,.nav-tabs{
+    border: 0;
+}
+/* ------------work---------- */
+#works .nav-link {
+    color:  var(--maim-color) ;
+    font-weight: 700;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    color: aqua;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active::after{
+    content: '' ;
+    height:2.5px ;
+    width: 40% ;
+    position: absolute ;
+    background-color:  var(--maim-color) ;
+    bottom: 5% ;
+    left:30% ; 
+}
+.Portfolio-contant .layer{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 222;
+    opacity: 0;
+    background-color: white;
+    transition: opacity ease-in-out .5s;
+
+}
+.Portfolio-contant:hover .layer{
+   
+    opacity: 1;
+    
+}
+
+.Portfolio-icons ul li{
+    all: unset;
+    margin: 7px;
+
+}
+.Portfolio-icons ul li a{
+    color: white;
+    border: 1px solid  var(--maim-color);
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    background-color:  var(--maim-color);
+    transition:all 0.5s ;
+    -webkit-transition:all 0.5s ;
+    -moz-transition:all 0.5s ;
+    -ms-transition:all 0.5s ;
+    -o-transition:all 0.5s ;
+    padding: 10px ;
+    font-family: var(--sec-font);
+
+
+}
+
+.Portfolio-icons ul li a:hover{
+    color:  var(--maim-color);
+    border: 1px solid  var(--maim-color); 
+    background-color: white;
+
+}
+
+/* -------------Testimonials------------ */
+.Testimonials-contant img{
+
+    width: 15%;
+
+}
+.carousel-indicators [data-bs-target] {
+    background-color:black!important;
+    width: 10px;
+    padding: 5px;
+
+}
+
+.img-thumbnail {
+    border: 0px;
+    padding: 0px;
+}
+.carousel-indicators [data-bs-target]{
+     width: 1px;
+     height: 1px;
+     margin: 5px 7px;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     background-color: rgb(214,214,214) !important;
+     transition: all 0.3;
+     -webkit-transition: all 0.3;
+     -moz-transition: all 0.3;
+     -ms-transition: all 0.3;
+     -o-transition: all 0.3;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color:  var(--maim-color) !important;
+   
+}
+.carousel-indicators .active{
+    background-color: #869791 !important;
+}
+
+.count-item h3{
+    font-size: 30PX;
+    font-weight: 900;
+}
+
+/* ---------team--------- */
+.card-body{
+    background-color: rgb(91,91,91);
+    color: white;
+}
+.card-icon li {
+    margin: 5px;
+    list-style:none;
+}
+  .card-icon li a{
+    color: white;
+    border:1px solid   var(--maim-color);
+    background-color:  var(--maim-color);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    padding: 10px;
+}
+.card-icon  li a:hover{
+    color:  var(--maim-color);
+    border: 1px solid  var(--maim-color); 
+    background-color: white;
+}
+.card-img-layer{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    z-index: 222;
+    opacity: 0;
+    background-color: white;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+
+.card-img:hover .card-img-layer{
+opacity: 1;
+rotate: y 360deg;
+
+}
+.card-img:hover .card-img img{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+.card-img img{
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+.card-img:hover img{
+    transform: scale(1.5) !important;
+    -webkit-transform: scale(1.5) !important;
+    -moz-transform: scale(1.5) !important;
+    -ms-transform: scale(1.5) !important;
+    -o-transform: scale(1.5) !important;
+}
+/* -------------contact---------- */
+.contact-item i{
+    padding: 20px;
+    background-color: rgb(223,223,223);
+    font-size: 25px;
+    margin: 10px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.contact-item i:hover{
+    background-color: var(--maim-color);
+    color: white;
+   
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color:transparent ;
+    background-color:rgb(223,223,223) ;
+   
+}
+.form-control{
+    background-color:rgb(223,223,223) ;
+   
+}
+.submit-btn button{
+    padding: 8px 30px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.submit-btn:hover button{
+    border-color:  var(--maim-color) !important;
+background-color: white !important;
+color:  var(--maim-color) !important;
+}
+ footer p{
+    margin-bottom: 0px;
+    font-family: var(--sec-font);
+
+}
+
+/* -----------media query-------- */
+@media only screen and (max-width: 600px){
+    .about-img::after{
+        content: '';
+        height: 50%;
+        width: 60%;
+        position: absolute;
+        left: -10px;
+        bottom: -20px; 
+        background-image: url(../dots.png);
+        background-repeat: repeat;
+        z-index: -1;
+    }
+    .about-img img{
+        width: 90%;
+    }
+     .about-caption{
+ margin: 30px 0px;
+     }
+     #home h1{
+        
+        line-height: 40px;
+        }
+        #home h2 p::after{
+            font-size: 30px;
+        }
+        #home h2 p{
+            font-size: 30px !important;
+        }
+           
+           
+}
+@media only screen and (max-width: 1000px){
+    .about-caption{
+        margin: 30px 0px;
+            } 
+            #home h1{
+        padding: 20px;
+         line-height: 40px;
+                }
+                #home h2 p::after{
+                    font-size: 35px;
+                }
+                #home h2 p{
+                    font-size: 35px !important;
+                }
+                   
+        }
